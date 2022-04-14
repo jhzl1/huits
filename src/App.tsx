@@ -1,3 +1,4 @@
+import Footer from "components/Footer";
 import { Navbar } from "components/navbar";
 import { socialMediaLink } from "const/socialMediaLinks";
 import HomePage from "pages/HomePage";
@@ -28,6 +29,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
         </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
   );
