@@ -1,4 +1,4 @@
-import CtaPage from "components/CtaPage";
+import CtaPage from "components/CtaHome";
 
 const HomePage = () => {
   return (
