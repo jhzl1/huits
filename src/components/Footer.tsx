@@ -1,14 +1,24 @@
+import { socialMediaLink } from "const/socialMediaLinks";
+
 const Footer = () => {
   return (
-    <div className="bg-[#652682] h-[118px] flex justify-center items-center">
+    <div className="bg-[#652682] h-[118px] flex justify-center items-center flex-col pt-6">
       <div className="flex flex-row justify-center items-center">
-        <i className="fa-brands fa-discord text-white text-3xl" />
-        <i className="fa-brands fa-twitter text-white text-3xl" />
-        <i className="fa-brands fa-facebook-f text-white text-3xl" />
-        <i className="fa-brands fa-youtube text-white text-3xl" />
-        <i className="fa-brands fa-instagram text-white text-3xl" />
-        <i className="fa-brands fa-tiktok text-white text-3xl" />
+        {socialMediaLink.map(({ icon, link }, i) => (
+          <a
+            key={i}
+            href={link}
+            className="text-white text-2xl mx-9"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className={`fa-brands ${icon}`} />
+          </a>
+        ))}
       </div>
+      <p className="text-white mar mt-[25px]">
+        2022 Todos los derechos reservados Huit Investment
+      </p>
     </div>
   );
 };
