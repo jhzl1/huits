@@ -1,7 +1,7 @@
 export const NavbarLogo = () => {
   return (
     <svg width="195" height="57" viewBox="0 0 195 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g clip-path="url(#clip0_10_174)">
+      <g clipPath="url(#clip0_10_174)">
         <path
           d="M93.74 36.81L92.72 26.63L84.84 27.34L83.91 36.81H75.28L72.62 9.98001H86.57L85.55 20.21H92.1L91.08 9.98001H105.03L102.37 36.81H93.74Z"
           fill="#652682"
@@ -165,8 +165,8 @@ export const NavbarLogo = () => {
           y2="9.40211"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#2782C5" />
-          <stop offset="1" stop-color="#2782C5" stop-opacity="0" />
+          <stop stopColor="#2782C5" />
+          <stop offset="1" stopColor="#2782C5" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_10_174"
@@ -176,8 +176,8 @@ export const NavbarLogo = () => {
           y2="9.40212"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#2782C5" />
-          <stop offset="1" stop-color="#2782C5" stop-opacity="0" />
+          <stop stopColor="#2782C5" />
+          <stop offset="1" stopColor="#2782C5" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_10_174"
@@ -187,8 +187,8 @@ export const NavbarLogo = () => {
           y2="18.6427"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#2782C5" />
-          <stop offset="1" stop-color="#2782C5" stop-opacity="0" />
+          <stop stopColor="#2782C5" />
+          <stop offset="1" stopColor="#2782C5" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_10_174"
@@ -198,8 +198,8 @@ export const NavbarLogo = () => {
           y2="9.40208"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#2782C5" />
-          <stop offset="1" stop-color="#2782C5" stop-opacity="0" />
+          <stop stopColor="#2782C5" />
+          <stop offset="1" stopColor="#2782C5" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_10_174"
@@ -209,8 +209,8 @@ export const NavbarLogo = () => {
           y2="9.4021"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#2782C5" />
-          <stop offset="1" stop-color="#2782C5" stop-opacity="0" />
+          <stop stopColor="#2782C5" />
+          <stop offset="1" stopColor="#2782C5" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_10_174"
@@ -220,8 +220,8 @@ export const NavbarLogo = () => {
           y2="9.4021"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#2782C5" />
-          <stop offset="1" stop-color="#2782C5" stop-opacity="0" />
+          <stop stopColor="#2782C5" />
+          <stop offset="1" stopColor="#2782C5" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_10_174"
@@ -231,8 +231,8 @@ export const NavbarLogo = () => {
           y2="12.6794"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_10_174"
@@ -242,8 +242,8 @@ export const NavbarLogo = () => {
           y2="17.7917"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint8_linear_10_174"
@@ -253,8 +253,8 @@ export const NavbarLogo = () => {
           y2="17.8285"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint9_linear_10_174"
@@ -264,8 +264,8 @@ export const NavbarLogo = () => {
           y2="12.5501"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint10_linear_10_174"
@@ -275,8 +275,8 @@ export const NavbarLogo = () => {
           y2="19.8466"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint11_linear_10_174"
@@ -286,8 +286,8 @@ export const NavbarLogo = () => {
           y2="13.5748"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint12_linear_10_174"
@@ -297,8 +297,8 @@ export const NavbarLogo = () => {
           y2="10.1795"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint13_linear_10_174"
@@ -308,8 +308,8 @@ export const NavbarLogo = () => {
           y2="9.16207"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint14_linear_10_174"
@@ -319,8 +319,8 @@ export const NavbarLogo = () => {
           y2="20.9742"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint15_radial_10_174"
@@ -330,8 +330,8 @@ export const NavbarLogo = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(141.014 7.2478) scale(6.6593)"
         >
-          <stop stop-color="#1E3C90" />
-          <stop offset="1" stop-color="#0B8CCB" />
+          <stop stopColor="#1E3C90" />
+          <stop offset="1" stopColor="#0B8CCB" />
         </radialGradient>
         <linearGradient
           id="paint16_linear_10_174"
@@ -341,11 +341,11 @@ export const NavbarLogo = () => {
           y2="0"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#24796F" />
-          <stop offset="0.1167" stop-color="#256F67" />
-          <stop offset="0.3453" stop-color="#235552" />
-          <stop offset="0.6633" stop-color="#182E30" />
-          <stop offset="1" stop-color="#020203" />
+          <stop stopColor="#24796F" />
+          <stop offset="0.1167" stopColor="#256F67" />
+          <stop offset="0.3453" stopColor="#235552" />
+          <stop offset="0.6633" stopColor="#182E30" />
+          <stop offset="1" stopColor="#020203" />
         </linearGradient>
         <linearGradient
           id="paint17_linear_10_174"
@@ -355,12 +355,12 @@ export const NavbarLogo = () => {
           y2="7.6562"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#0A5DA5" />
-          <stop offset="0.0653" stop-color="#2C66AC" />
-          <stop offset="0.4124" stop-color="#8FA1D1" />
-          <stop offset="0.6942" stop-color="#CDD3EB" />
-          <stop offset="0.8966" stop-color="#F1F3FA" />
-          <stop offset="1" stop-color="white" />
+          <stop stopColor="#0A5DA5" />
+          <stop offset="0.0653" stopColor="#2C66AC" />
+          <stop offset="0.4124" stopColor="#8FA1D1" />
+          <stop offset="0.6942" stopColor="#CDD3EB" />
+          <stop offset="0.8966" stopColor="#F1F3FA" />
+          <stop offset="1" stopColor="white" />
         </linearGradient>
         <linearGradient
           id="paint18_linear_10_174"
@@ -370,12 +370,12 @@ export const NavbarLogo = () => {
           y2="6.46521"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#020203" />
-          <stop offset="0.097" stop-color="#101017" />
-          <stop offset="0.4322" stop-color="#463D54" />
-          <stop offset="0.7045" stop-color="#746188" />
-          <stop offset="0.9001" stop-color="#9479AC" />
-          <stop offset="1" stop-color="#A084BB" />
+          <stop stopColor="#020203" />
+          <stop offset="0.097" stopColor="#101017" />
+          <stop offset="0.4322" stopColor="#463D54" />
+          <stop offset="0.7045" stopColor="#746188" />
+          <stop offset="0.9001" stopColor="#9479AC" />
+          <stop offset="1" stopColor="#A084BB" />
         </linearGradient>
         <linearGradient
           id="paint19_linear_10_174"
@@ -385,8 +385,8 @@ export const NavbarLogo = () => {
           y2="16.7625"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#2782C5" />
-          <stop offset="1" stop-color="#2782C5" stop-opacity="0" />
+          <stop stopColor="#2782C5" />
+          <stop offset="1" stopColor="#2782C5" stopOpacity="0" />
         </linearGradient>
         <clipPath id="clip0_10_174">
           <rect width="194.11" height="56.7" fill="white" />
