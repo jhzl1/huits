@@ -5,12 +5,12 @@ import Portfolios from "components/Portfolios";
 
 const HomePage = () => {
   return (
-    <div>
-      <CtaPage />
+    <>
+      {/* <CtaPage /> */}
       <AboutUs />
       <Portfolios />
       <FormContact />
-    </div>
+    </>
   );
 };
 

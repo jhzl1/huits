@@ -1,6 +1,6 @@
 export const NavbarLogo = () => {
   return (
-    <svg width="195" height="57" viewBox="0 0 195 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className="w-32 md:w-44" viewBox="0 0 195 57" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clipPath="url(#clip0_10_174)">
         <path
           d="M93.74 36.81L92.72 26.63L84.84 27.34L83.91 36.81H75.28L72.62 9.98001H86.57L85.55 20.21H92.1L91.08 9.98001H105.03L102.37 36.81H93.74Z"
