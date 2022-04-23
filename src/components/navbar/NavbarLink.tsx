@@ -13,7 +13,7 @@ const NavbarLink: FC<NavbarLinkProps> = ({ children, onClick, setshowNavbar }) =
         setshowNavbar(false);
         onClick();
       }}
-      className="my-8 md:my-0 mx-4 lg:mx-10 text-3xl md:text-base cursor-pointer"
+      className="navbar-link"
     >
       {children}
     </span>

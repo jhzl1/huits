@@ -1,27 +1,36 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useRef, useState } from "react";
 
+import { Home } from "pages";
 import { Navbar } from "components/navbar";
 import { socialMediaLink } from "const/socialMediaLinks";
-import Footer from "components/Footer";
-import HomePage from "pages/HomePage";
 import Burger from "assets/vectors/Burger";
-import AboutUs from "components/AboutUs";
-import Portfolios from "components/Portfolios";
-import FormContact from "components/FormContact";
-import CtaHome from "components/CtaHome";
+import Footer from "components/Footer";
 
-function App() {
+const App = () => {
   const [showNavbar, setshowNavbar] = useState(false);
   const portfolioRef = useRef<any>(null);
   const aboutRef = useRef<any>(null);
+  const contactRef = useRef<any>(null);
+
+  const propsScroll = { behavior: "smooth", block: "start" };
 
   const scrollToAbout = () => {
-    aboutRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    aboutRef.current.scrollIntoView(propsScroll);
   };
   const scrollToPortfolio = () => {
-    portfolioRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    portfolioRef.current.scrollIntoView(propsScroll);
   };
+  const scrollToContact = () => {
+    contactRef.current.scrollIntoView(propsScroll);
+  };
+
+  const links = [
+    { title: "Nosotros", scrollFunc: scrollToAbout },
+    { title: "Portafolio", scrollFunc: scrollToPortfolio },
+    { title: "Contacto", scrollFunc: scrollToContact },
+  ];
+
   return (
     <BrowserRouter>
       <Navbar>
@@ -35,18 +44,11 @@ function App() {
             showNavbar ? "right-0" : " -right-[600px]"
           } transition-all duration-200 `}
         >
-          <Navbar.Link onClick={scrollToAbout} setshowNavbar={setshowNavbar}>
-            Nosotros
-          </Navbar.Link>
-          <Navbar.Link onClick={scrollToPortfolio} setshowNavbar={setshowNavbar}>
-            Portafolio
-          </Navbar.Link>
-          <Navbar.Link onClick={scrollToAbout} setshowNavbar={setshowNavbar}>
-            Proyectos
-          </Navbar.Link>
-          <Navbar.Link onClick={scrollToAbout} setshowNavbar={setshowNavbar}>
-            Contactos
-          </Navbar.Link>
+          {links.map(({ title, scrollFunc }) => (
+            <Navbar.Link key={title} onClick={scrollFunc} setshowNavbar={setshowNavbar}>
+              {title}
+            </Navbar.Link>
+          ))}
 
           <div className="grid grid-cols-3 gap-14 md:gap-5 my-8 md:flex">
             {socialMediaLink.map(({ icon, link }, i) => (
@@ -63,20 +65,18 @@ function App() {
             path="/"
             element={
               <>
-                <CtaHome scrollToAbout={scrollToAbout} />
-                <AboutUs ref={aboutRef} />
-                <Portfolios ref={portfolioRef} />
-                <FormContact />
+                <Home.CtaHome scrollToAbout={scrollToAbout} />
+                <Home.AboutUs ref={aboutRef} />
+                <Home.Portfolios ref={portfolioRef} />
+                <Home.FormContact ref={contactRef} />
               </>
             }
           />
         </Routes>
         <Footer />
-
-        <div id="div">desplazamientro</div>
       </div>
     </BrowserRouter>
   );
-}
+};
 
 export default App;

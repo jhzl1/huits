@@ -2,9 +2,9 @@
   @apply fixed top-0 bg-white/80 w-full h-20 md:h-24 p-5 flex items-center justify-between;
 }
 
-/* .links-container {
-  @apply;
-} */
+.navbar-link {
+  @apply my-8 md:my-0 mx-4 lg:mx-10 text-3xl md:text-base cursor-pointer transition-all duration-200 hover:border-b hover:border-[#652682];
+}
 
 .responsive-links-container {
   @apply absolute w-[95%] sm:w-[75%] text-white rounded-l-[5rem] top-0 items-center flex flex-col;
@@ -21,4 +21,12 @@
   background-image: url("../img/form-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+footer {
+  @apply bg-[#652682]  flex justify-center items-center flex-col py-6;
+}
+
+.footer-links-container {
+  @apply grid grid-cols-3 gap-10  md:flex flex-row justify-center items-center;
 }
