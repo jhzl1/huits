@@ -13,16 +13,16 @@ const App = () => {
   const aboutRef = useRef<any>(null);
   const contactRef = useRef<any>(null);
 
-  const propsScroll = { behavior: "smooth", block: "start" };
+  const scrollOptions = { behavior: "smooth", block: "start" };
 
   const scrollToAbout = () => {
-    aboutRef.current.scrollIntoView(propsScroll);
+    aboutRef.current.scrollIntoView(scrollOptions);
   };
   const scrollToPortfolio = () => {
-    portfolioRef.current.scrollIntoView(propsScroll);
+    portfolioRef.current.scrollIntoView(scrollOptions);
   };
   const scrollToContact = () => {
-    contactRef.current.scrollIntoView(propsScroll);
+    contactRef.current.scrollIntoView(scrollOptions);
   };
 
   const links = [
@@ -59,7 +59,7 @@ const App = () => {
           </div>
         </div>
       </Navbar>
-      <div className="App w-full">
+      <div className="App">
         <Routes>
           <Route
             path="/"

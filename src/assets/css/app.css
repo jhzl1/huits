@@ -6,10 +6,6 @@ body {
   @apply bg-[#1A0728] text-white;
 }
 
-#root {
-  @apply w-screen;
-}
-
 .gradient {
   @apply bg-gradient-to-br from-[#E164C5] via-[#8000FF] to-[#8000FF];
 }

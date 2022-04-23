@@ -1,9 +1,6 @@
 const CtaHome = ({ scrollToAbout }: { scrollToAbout: () => void }) => {
   return (
-    <div
-      id="cta-container"
-      className="h-screen flex flex-col justify-center md:flex-row md:justify-start items-center p-0 md:px-28 "
-    >
+    <div id="cta-container">
       <div>
         <h2 className="text-5xl sm:text-7xl my-5 font-bold">Vive libre,</h2>
         <h2 className="text-5xl sm:text-7xl my-5 font-bold">vive Huit´s</h2>
