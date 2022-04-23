@@ -22,6 +22,9 @@ function App() {
   const scrollToPortfolio = () => {
     portfolioRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
   };
+
+  // TODO: method to consume crud insert
+
   return (
     <BrowserRouter>
       <Navbar>
@@ -73,7 +76,7 @@ function App() {
         </Routes>
         <Footer />
 
-        <div id="div">desplazamientro</div>
+        <div id="div"></div>
       </div>
     </BrowserRouter>
   );
