@@ -10,7 +10,7 @@ const Footer = () => {
           </a>
         ))}
       </div>
-      <p className="text-center mt-[25px]">2022 Todos los derechos reservados Huit Investment</p>
+      <p className="text-center mt-[25px]">2022 Todos los derechos reservados. Huit Investment</p>
     </footer>
   );
 };

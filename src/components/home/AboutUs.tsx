@@ -5,11 +5,11 @@ const AboutUs = forwardRef((_, ref) => (
   <div className="text-white mb-20" ref={ref as never}>
     <div className="md:py-28 grid-cols-1  md:grid-cols-2">
       <div className="px-6 md:px-24 py-10">
-        <h2 className="text-[#8108B9] text-6xl mb-10">
+        <h2 className="text-[#8108B9] text-5xl md:text-6xl mb-10">
           Quiénes <span className="text-white"> somos</span>
         </h2>
 
-        <p className="text-3xl">
+        <p className="text-xl md:text-3xl">
           Somos un equipo multidisciplinario enfocado en brindar soluciones innovadoras basadas en la aplicación de
           tecnologías blockchain, con ello buscamos innovar continuamente en el mundo financiero global fundamentado en
           parámetros de eficiencia e integridad. Huit’s Investment nace como un holding cuya premisa fundamental es la
