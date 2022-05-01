@@ -1,6 +1,9 @@
 import { socialMediaLink } from "const/socialMediaLinks";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer>
       <div className="footer-links-container">
@@ -10,7 +13,7 @@ const Footer = () => {
           </a>
         ))}
       </div>
-      <p className="text-center mt-[25px]">2022 Todos los derechos reservados. Huit Investment</p>
+      <p className="text-center mt-[25px]">{t("footer")}</p>
     </footer>
   );
 };

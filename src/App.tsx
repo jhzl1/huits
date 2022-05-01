@@ -1,17 +1,21 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import { Home } from "pages";
 import { Navbar } from "components/navbar";
 import { socialMediaLink } from "const/socialMediaLinks";
 import Burger from "assets/vectors/Burger";
 import Footer from "components/Footer";
+import BtnChangeLocale from "components/BtnChangeLocale";
 
 const App = () => {
   const [showNavbar, setshowNavbar] = useState(false);
   const portfolioRef = useRef<any>(null);
   const aboutRef = useRef<any>(null);
   const contactRef = useRef<any>(null);
+
+  const { t } = useTranslation();
 
   const scrollOptions = { behavior: "smooth", block: "start" };
 
@@ -26,9 +30,9 @@ const App = () => {
   };
 
   const links = [
-    { title: "Nosotros", scrollFunc: scrollToAbout },
-    { title: "Portafolio", scrollFunc: scrollToPortfolio },
-    { title: "Contacto", scrollFunc: scrollToContact },
+    { title: "navbar.about", scrollFunc: scrollToAbout },
+    { title: "navbar.porfolio", scrollFunc: scrollToPortfolio },
+    { title: "navbar.contact", scrollFunc: scrollToContact },
   ];
 
   return (
@@ -46,10 +50,9 @@ const App = () => {
         >
           {links.map(({ title, scrollFunc }) => (
             <Navbar.Link key={title} onClick={scrollFunc} setshowNavbar={setshowNavbar}>
-              {title}
+              {t(title)}
             </Navbar.Link>
           ))}
-
           <div className="grid grid-cols-3 gap-14 md:gap-5 my-8 md:flex">
             {socialMediaLink.map(({ icon, link }, i) => (
               <a key={i} href={link} className="text-3xl md:text-base" target="_blank" rel="noreferrer">
@@ -57,6 +60,7 @@ const App = () => {
               </a>
             ))}
           </div>
+          <BtnChangeLocale />
         </div>
       </Navbar>
       <div className="App">
