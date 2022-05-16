@@ -76,6 +76,7 @@ const App = () => {
               </>
             }
           />
+          <Route path="/ourportfolio" element={<></>} />
         </Routes>
         <Footer />
       </div>
