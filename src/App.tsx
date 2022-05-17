@@ -8,6 +8,7 @@ import { socialMediaLink } from "const/socialMediaLinks";
 import Burger from "assets/vectors/Burger";
 import Footer from "components/Footer";
 import BtnChangeLocale from "components/BtnChangeLocale";
+import FormContact from "components/FormContact";
 
 const App = () => {
   const [showNavbar, setshowNavbar] = useState(false);
@@ -72,7 +73,6 @@ const App = () => {
                 <Home.CtaHome scrollToAbout={scrollToAbout} />
                 <Home.AboutUs ref={aboutRef} />
                 <Home.Portfolios ref={portfolioRef} />
-                <Home.FormContact ref={contactRef} />
               </>
             }
           />
@@ -81,12 +81,13 @@ const App = () => {
             element={
               <>
                 <Portfolio.CtaPortfolio />
-                <Portfolio.DescriptionPortfolio />
-                <Portfolio.AssetsPorfolio />
+                <Portfolio.Description />
+                <Portfolio.Assets />
               </>
             }
           />
         </Routes>
+        <FormContact ref={contactRef} />
         <Footer />
       </div>
     </BrowserRouter>
