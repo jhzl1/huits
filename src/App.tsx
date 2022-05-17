@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-import { Home } from "pages";
+import { Home, Portfolio } from "pages";
 import { Navbar } from "components/navbar";
 import { socialMediaLink } from "const/socialMediaLinks";
 import Burger from "assets/vectors/Burger";
@@ -76,7 +76,16 @@ const App = () => {
               </>
             }
           />
-          <Route path="/ourportfolio" element={<></>} />
+          <Route
+            path="/ourportfolio"
+            element={
+              <>
+                <Portfolio.CtaPortfolio />
+                <Portfolio.DescriptionPortfolio />
+                <Portfolio.AssetsPorfolio />
+              </>
+            }
+          />
         </Routes>
         <Footer />
       </div>
