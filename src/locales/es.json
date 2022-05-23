@@ -1,10 +1,15 @@
 {
+  "slogan.1": "Vive libre,",
+  "slogan.2": "vive Huit's",
+  "start.button.text":"Inicio",
+  "items.moreinfo":"Más Info",
+  "items.contact":"contacto@huitinvestment.com",
   "navbar.about": "Nosotros",
   "navbar.porfolio": "Portafolio",
   "navbar.contact": "Contacto",
   "about.title.1": "Quiénes",
   "about.title.2": "somos",
-  "about.description": "Somos un equipo multidisciplinario enfocado en brindar soluciones innovadoras basadas en la aplicación de tecnologías blockchain, con ello buscamos innovar continuamente en el mundo financiero global fundamentado en parámetros de eficiencia e integridad. Huit’s Investment nace como un holding cuya premisa fundamental es la construcción de confianza y la continua búsqueda de oportunidades de crecimiento.",
+  "about.description": "Somos un equipo multidisciplinario enfocado en brindar soluciones innovadoras basadas en la aplicación de tecnologías blockchain, con ello buscamos innovar continuamente en el mundo financiero global, fundamentados en parámetros de eficiencia e integridad. Huit’s Investment nace como un holding cuya premisa fundamental es la construcción de confianza y la continua búsqueda de oportunidades de crecimiento.",
   "about.title.3": "Nuestro propósito",
   "about.title.4": "y nuestros valores",
   "about.description.2": "En Huit's investment nuestro propósito es democratizar el acceso al mercado bursátil y financiero teniendo como fundamento una adecuada administración del riesgo de mercado, así como la búsqueda continua de oportunidades en un mundo competitivo, que beneficien los intereses de nuestros stakeholders promoviendo así un crecimiento tanto personal como financiero de los mismos.",
@@ -17,5 +22,5 @@
   "portfolio.descr.3": "La colección NFT que democratiza el acceso a una Land en Lunacia.",
   "contact.title": "Contacto",
   "contact.description": "Escríbenos a",
-  "footer": "2022 Todos los derechos reservados. Huit Investment"
+  "footer": "2020 Todos los derechos reservados Huit Investment Develop Team"
 }

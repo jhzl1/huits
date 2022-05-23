@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { string } from "yup";
 
 type Language = "es" | "en";
 
 const BtnChangeLocale = () => {
   const { i18n } = useTranslation();
 
-  const colombiaFlag = require("assets/img/colombia.png");
-  const eeuuFlag = require("assets/img/eeuu.png");
+  const colombiaFlag = require("assets/img/spanishFlag.png");
+  const eeuuFlag = require("assets/img/englishFlag.png");
 
   const [language, setLanguage] = useState<Language>("en");
 
@@ -19,9 +20,16 @@ const BtnChangeLocale = () => {
 
   return (
     <div className="ml-2">
-      <button onClick={onChangeLanguage}>
-        <img src={language === "es" ? colombiaFlag : eeuuFlag} alt="es" className="w-7 rounded-sm" />
-      </button>
+      <div className="w-32 ml-10 col-span-2">
+        <span>
+          <button onClick={onChangeLanguage}>
+           <img src={language === "es" ? eeuuFlag : colombiaFlag} alt="es" className="w-12 rounded-full" />                    
+         </button>
+      </span>
+        <span>
+          {language === "es" ? "English" : "Español"}
+        </span>      
+      </div> 
     </div>
   );
 };

@@ -19,8 +19,7 @@
 
 #form-contact-container {
   background-image: url("../img/form-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
 }
 
 #cta-container {

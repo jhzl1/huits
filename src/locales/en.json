@@ -1,6 +1,26 @@
 {
+  "slogan.1": "Live free,",
+  "slogan.2": "live Huit's",
+  "start.button.text":"Home",
+  "items.moreinfo":"More Info",
+  "items.contact":"contacto@huitinvestment.com",
   "navbar.about": "About us",
   "navbar.porfolio": "Portfolio",
   "navbar.contact": "Contact",
-  "about.description": "This is the description"
+  "about.title.1": "Who",
+  "about.title.2": "we are",
+  "about.description": "We are a multidisciplinary team focused on providing innovative solutions based on the application of blockchain technologies, with this we seek to continuously innovate in the global financial world based on parameters of efficiency and integrity. Huit's Investment was born as a holding company whose main goal is the construction of trust and the continuous search for growth opportunities.",
+  "about.title.3": "Our purpose",
+  "about.title.4": "and our values",
+  "about.description.2": "At Huit's investment, our purpose is to democratize access to the stock and financial market, based on adequate management of market risk, as well as the continuous search for opportunities in a competitive world, which benefits the interests of our stakeholders, thus promoting both personal and financial growth.",
+  "portfolio.title": "Portfolio",
+  "portfolio.item.1": "Huit's Portfolio",
+  "portfolio.descr.1": "Our purpose is to democratize access to the stock and financial market.",
+  "portfolio.item.2": "Huit's League",
+  "portfolio.descr.2": "We support scholarship growth by hosting events at Axie Infinity.",
+  "portfolio.item.3": "Beverly Huit's",
+  "portfolio.descr.3": "The NFT collection that democratizes access to a Land in Lunacia.",
+  "contact.title": "Contact",
+  "contact.description": "Send us an email: ",
+  "footer": "2020 All Rights Reserved Huit Investment's Develop Team"
 }

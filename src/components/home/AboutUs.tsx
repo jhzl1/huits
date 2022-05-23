@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 const AboutUs = forwardRef((_, ref) => {
   const { t } = useTranslation();
 
+  
   return (
     <div className="text-white mb-7 md:mb-20" ref={ref as never}>
       <div className="md:py-28 grid grid-cols-1  lg:grid-cols-2">
