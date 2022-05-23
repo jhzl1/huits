@@ -1,5 +1,6 @@
 import { forwardRef } from "react";
-import { getI18n, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const Portfolios = forwardRef((_, ref) => {
   const { t } = useTranslation();
@@ -10,7 +11,7 @@ const Portfolios = forwardRef((_, ref) => {
       title: "portfolio.item.1",
       description: "portfolio.descr.1",
       image: require("assets/img/graph.png"),
-      info:"items.contact",
+      link: "/ourportfolio",
     },
     {
       title: "portfolio.item.2",
@@ -46,16 +47,16 @@ const Portfolios = forwardRef((_, ref) => {
       <h2 className="text-[#8108B9] text-5xl md:text-6xl mb-10"> {t("portfolio.title")}</h2>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-        {portfolios.map(({ title, description, image, info }) => (
+        {portfolios.map(({ title, description, image, link }) => (
           <div className="gradient text-white rounded-lg p-7" key={title}>
             <img src={image} alt="" className="w-32 md:w-28 mb-5 m-auto" />
             <h3 className="font-bold text-3xl mb-3">{t(title)}</h3>
             <span className="text-xl">{t(description)}</span>
-            <br></br>
-            <br></br>
-            <div className="content-center grid grid-cols-1 lg:grid-cols-1 gap-5">
-              { info == "items.moreinfo" ? <Info /> : null }
-            </div>               
+            {link && (
+              <Link to={link} className="float-right mt-6">
+                Ver más
+              </Link>
+            )}
           </div>
         ))}
       </div>

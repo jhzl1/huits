@@ -2,12 +2,13 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-import { Home } from "pages";
+import { Home, Portfolio } from "pages";
 import { Navbar } from "components/navbar";
 import { socialMediaLink } from "const/socialMediaLinks";
 import Burger from "assets/vectors/Burger";
 import Footer from "components/Footer";
 import BtnChangeLocale from "components/BtnChangeLocale";
+import FormContact from "components/FormContact";
 
 const App = () => {
   const [showNavbar, setshowNavbar] = useState(false);
@@ -72,11 +73,21 @@ const App = () => {
                 <Home.CtaHome scrollToAbout={scrollToAbout} />
                 <Home.AboutUs ref={aboutRef} />
                 <Home.Portfolios ref={portfolioRef} />
-                <Home.FormContact ref={contactRef} />
+              </>
+            }
+          />
+          <Route
+            path="/ourportfolio"
+            element={
+              <>
+                <Portfolio.CtaPortfolio />
+                <Portfolio.Description />
+                <Portfolio.Assets />
               </>
             }
           />
         </Routes>
+        <FormContact ref={contactRef} />
         <Footer />
       </div>
     </BrowserRouter>
