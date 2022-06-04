@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 import { Home, Portfolio } from "pages";
 import { Navbar } from "components/navbar";
@@ -21,18 +22,18 @@ const App = () => {
   const scrollOptions = { behavior: "smooth", block: "start" };
 
   const scrollToAbout = () => {
-    aboutRef.current.scrollIntoView(scrollOptions);
+    aboutRef.current.scrollTo(0, 0);
   };
   const scrollToPortfolio = () => {
-    portfolioRef.current.scrollIntoView(scrollOptions);
+    portfolioRef.current.scrollTo(0, 0);
   };
   const scrollToContact = () => {
     contactRef.current.scrollIntoView(scrollOptions);
   };
 
   const links = [
-    { title: "navbar.about", scrollFunc: scrollToAbout },
-    { title: "navbar.porfolio", scrollFunc: scrollToPortfolio },
+    { title: "navbar.about", isOur : true, link: "/", scrollFunc: scrollToPortfolio },
+    { title: "navbar.porfolio", isOur : true, link: "/ourportfolio", scrollFunc: scrollToPortfolio },
     { title: "navbar.contact", scrollFunc: scrollToContact },
   ];
 
@@ -49,10 +50,12 @@ const App = () => {
             showNavbar ? "right-0" : " -right-[600px]"
           } transition-all duration-200 `}
         >
-          {links.map(({ title, scrollFunc }) => (
-            <Navbar.Link key={title} onClick={scrollFunc} setshowNavbar={setshowNavbar}>
-              {t(title)}
-            </Navbar.Link>
+          {links.map(({ title,isOur, link, scrollFunc }) => (
+            isOur ?   <Link to={link} onClick={scrollFunc} className="m-8">
+            {t(title)}
+          </Link>: <Navbar.Link key={title} onClick={scrollFunc} setshowNavbar={setshowNavbar}>
+            {t(title)}
+          </Navbar.Link>           
           ))}
           <div className="grid grid-cols-3 gap-14 md:gap-5 my-8 md:flex">
             {socialMediaLink.map(({ icon, link }, i) => (

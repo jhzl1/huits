@@ -22,5 +22,18 @@
   "portfolio.descr.3": "The NFT collection that democratizes access to a Land in Lunacia.",
   "contact.title": "Contact",
   "contact.description": "Send us an email: ",
-  "footer": "2020 All Rights Reserved Huit Investment's Develop Team"
+  "footer": "2020 All Rights Reserved Huit Investment's Develop Team",
+  "history.title": "History",
+  "history.description": "Founded in October 2020, Huit's Investment was created as an investment portfolio with a long-term focus. It specializes in the strategic selection of assets that generate high value and growth potential; Since its creation, the portfolio has maintained an average monthly return of 3.5%, having as a fundamental premise the preservation of invested capital, as well as the effectiveness in the selection and execution of investments, seeking the highest returns for its stakeholders.",
+  "portfolio.composition.title": "Portfolio composition",
+  "portfolio.historicchange.title": "Historic change",
+  "portfolio.performance.title": "Performance",
+  "portfolio.composition.description": "The investment portfolio is made up of low, medium and high risk assets, which provide stability and an adequate level of risk based on diversification, among others we have investments in the real estate sector, cryptocurrencies, NFT assets, stocks and ETF's of the American market, likewise we have investments in creative projects through crowdfunding strategies and liquid securities to take advantage of new projects that provide growth potential.",
+  "assets.title": "Assets",
+  "profit.time.1":"1 month",
+  "profit.time.2":"3 months",
+  "profit.time.3":"1 year",
+  "profit.time.4":"Since start",
+  "profit.time.5":"Average",
+  "profit.time.6":"Best month"
 }

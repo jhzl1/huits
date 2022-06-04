@@ -1,17 +1,18 @@
 import { forwardRef } from "react";
-import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { useTranslation, getI18n } from "react-i18next";
+import { useRef, useState } from "react";
 
 const Portfolios = forwardRef((_, ref) => {
   const { t } = useTranslation();
-
+  const portRef = useRef<any>(null);
+  portRef.current.scrollTo(0, 0)
 
   const portfolios = [
     {
       title: "portfolio.item.1",
       description: "portfolio.descr.1",
       image: require("assets/img/graph.png"),
-      link: "/ourportfolio",
+      info:"more.info",
     },
     {
       title: "portfolio.item.2",
@@ -30,7 +31,13 @@ const Portfolios = forwardRef((_, ref) => {
   const infoTr = getI18n();
   const Info = () =>  (
     <div className="gradient text-white rounded-full py-3 mt-20 md:mt-0 text-xl w-94 sm:w-auto h-16 text-center">
-      { infoTr.language == "en" ? <EnglishInfo /> : <SpanishInfo /> }
+      { infoTr.language == "en" ? <MoreInfoTextEn /> : <SpanishInfo /> }
+    </div>
+  )
+
+  const MoreInfo = () =>  (
+    <div className="gradient text-white rounded-full py-3 mt-20 md:mt-0 text-xl w-94 sm:w-auto h-16 text-center">
+      { infoTr.language == "en" ? <EnglishInfo /> : <MoreInfoTextEs /> }
     </div>
   )
 
@@ -42,21 +49,29 @@ const Portfolios = forwardRef((_, ref) => {
     <a href="https://beverlyhuit.huitinvestment.com/español">Más Información</a>
   )
 
+  const MoreInfoTextEn = () =>  (
+   <a href="/ourportfolio">More Info</a>
+  )
+
+  const MoreInfoTextEs = () =>  (
+    <a href="/ourportfolio">Más Información</a>
+  )
+
   return (
     <div className="px-6 md:px-24 pt-10" ref={ref as never}>
       <h2 className="text-[#8108B9] text-5xl md:text-6xl mb-10"> {t("portfolio.title")}</h2>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-        {portfolios.map(({ title, description, image, link }) => (
+        {portfolios.map(({ title, description, image, info }) => (         
           <div className="gradient text-white rounded-lg p-7" key={title}>
             <img src={image} alt="" className="w-32 md:w-28 mb-5 m-auto" />
             <h3 className="font-bold text-3xl mb-3">{t(title)}</h3>
             <span className="text-xl">{t(description)}</span>
-            {link && (
-              <Link to={link} className="float-right mt-6">
-                Ver más
-              </Link>
-            )}
+            <br></br>
+            <br></br>
+            <div className="content-center grid grid-cols-1 lg:grid-cols-1 gap-5">
+              { info == "items.moreinfo" ? <Info /> : info == "more.info" ? <MoreInfo />: null }
+            </div> 
           </div>
         ))}
       </div>
