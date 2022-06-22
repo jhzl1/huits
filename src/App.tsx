@@ -32,8 +32,8 @@ const App = () => {
   };
 
   const links = [
-    { title: "navbar.about", isOur : true, link: "/", scrollFunc: scrollToPortfolio },
-    { title: "navbar.porfolio", isOur : true, link: "/ourportfolio", scrollFunc: scrollToPortfolio },
+    { title: "navbar.about", isOur: true, link: "/", scrollFunc: scrollToPortfolio },
+    { title: "navbar.porfolio", isOur: true, link: "/ourportfolio", scrollFunc: scrollToPortfolio },
     { title: "navbar.contact", scrollFunc: scrollToContact },
   ];
 
@@ -44,19 +44,22 @@ const App = () => {
         <button className="md:hidden z-20" onClick={() => setshowNavbar(!showNavbar)}>
           <Burger color={showNavbar ? "white" : "purple"} />
         </button>
-
         <div
           className={`responsive-links-container gradient md:w-auto md:bg-none md:flex-row md:relative md:right-0 md:text-[#652682] py-10 ${
             showNavbar ? "right-0" : " -right-[600px]"
           } transition-all duration-200 `}
         >
-          {links.map(({ title,isOur, link, scrollFunc }) => (
-            isOur ?   <Link to={link} onClick={scrollFunc} className="m-8">
-            {t(title)}
-          </Link>: <Navbar.Link key={title} onClick={scrollFunc} setshowNavbar={setshowNavbar}>
-            {t(title)}
-          </Navbar.Link>           
-          ))}
+          {links.map(({ title, isOur, link, scrollFunc }) =>
+            isOur ? (
+              <Link key={title} to={link} onClick={scrollFunc} className="m-8">
+                {t(title)}
+              </Link>
+            ) : (
+              <Navbar.Link key={title} onClick={scrollFunc} setshowNavbar={setshowNavbar}>
+                {t(title)}
+              </Navbar.Link>
+            )
+          )}
           <div className="grid grid-cols-3 gap-14 md:gap-5 my-8 md:flex">
             {socialMediaLink.map(({ icon, link }, i) => (
               <a key={i} href={link} className="text-3xl md:text-base" target="_blank" rel="noreferrer">

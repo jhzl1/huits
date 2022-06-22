@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { string } from "yup";
 
 type Language = "es" | "en";
 
@@ -23,13 +22,11 @@ const BtnChangeLocale = () => {
       <div className="w-32 ml-10 col-span-2">
         <span>
           <button onClick={onChangeLanguage}>
-           <img src={language === "es" ? eeuuFlag : colombiaFlag} alt="es" className="w-12 rounded-full" />                    
-         </button>
-      </span>
-        <span>
-          {language === "es" ? "English" : "Español"}
-        </span>      
-      </div> 
+            <img src={language === "es" ? eeuuFlag : colombiaFlag} alt="es" className="w-12 rounded-full" />
+          </button>
+        </span>
+        <span>{language === "es" ? "English" : "Español"}</span>
+      </div>
     </div>
   );
 };
